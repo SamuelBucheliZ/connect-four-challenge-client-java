@@ -1,4 +1,4 @@
-package ch.lukasakermann.connectfourchallenge.connectFourService;
+package ch.lukasakermann.connectfourchallenge.connectFourService.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

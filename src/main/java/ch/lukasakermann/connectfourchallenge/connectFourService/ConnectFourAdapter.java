@@ -1,5 +1,10 @@
 package ch.lukasakermann.connectfourchallenge.connectFourService;
 
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.DropDisc;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.Game;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.GameId;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.Join;
+import ch.lukasakermann.connectfourchallenge.connectFourService.rest.ConnectFourApiClient;
 import ch.lukasakermann.connectfourchallenge.rest.RestClientFactory;
 
 import java.util.UUID;

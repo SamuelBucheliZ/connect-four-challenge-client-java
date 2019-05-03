@@ -1,4 +1,4 @@
-package ch.lukasakermann.connectfourchallenge.connectFourService;
+package ch.lukasakermann.connectfourchallenge.connectFourService.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,11 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Player {
 
     private String playerId;
-    private String disc;
+    private DiscColor disc;
 
     @JsonCreator
     public Player(@JsonProperty("playerId") String playerId,
-                  @JsonProperty("disc") String disc) {
+                  @JsonProperty("disc") DiscColor disc) {
         this.playerId = playerId;
         this.disc = disc;
     }
@@ -19,7 +19,7 @@ public class Player {
         return playerId;
     }
 
-    public String getDisc() {
+    public DiscColor getDisc() {
         return disc;
     }
 }

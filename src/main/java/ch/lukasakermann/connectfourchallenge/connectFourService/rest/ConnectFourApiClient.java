@@ -1,6 +1,10 @@
-package ch.lukasakermann.connectfourchallenge.connectFourService;
+package ch.lukasakermann.connectfourchallenge.connectFourService.rest;
 
 
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.DropDisc;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.Game;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.GameId;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.Join;
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;

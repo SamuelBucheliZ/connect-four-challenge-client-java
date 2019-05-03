@@ -1,4 +1,4 @@
-package ch.lukasakermann.connectfourchallenge.connectFourService;
+package ch.lukasakermann.connectfourchallenge.connectFourService.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,14 +11,14 @@ public class Game {
     private final boolean finished;
     private final String currentPlayerId;
     private final List<Player> players;
-    private final List<List<String>> board;
+    private final Board board;
 
     @JsonCreator
     public Game(@JsonProperty("winner") String winner,
                 @JsonProperty("currentPlayerId") String currentPlayerId,
                 @JsonProperty("finished") boolean finished,
                 @JsonProperty("players") List<Player> players,
-                @JsonProperty("board") List<List<String>> board) {
+                @JsonProperty("board") Board board) {
 
         this.winner = winner;
         this.finished = finished;
@@ -39,7 +39,7 @@ public class Game {
         return players;
     }
 
-    public List<List<String>> getBoard() {
+    public Board getBoard() {
         return board;
     }
 

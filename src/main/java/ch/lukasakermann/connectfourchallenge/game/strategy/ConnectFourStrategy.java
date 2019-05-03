@@ -1,6 +1,6 @@
 package ch.lukasakermann.connectfourchallenge.game.strategy;
 
-import ch.lukasakermann.connectfourchallenge.connectFourService.Game;
+import ch.lukasakermann.connectfourchallenge.connectFourService.dto.Game;
 
 public interface ConnectFourStrategy {
     int dropDisc(Game game);
@@ -8,7 +8,7 @@ public interface ConnectFourStrategy {
     default void win(Game game) {
     }
 
-    default void loose(Game game) {
+    default void lose(Game game) {
     }
 
     default void draw(Game game) {

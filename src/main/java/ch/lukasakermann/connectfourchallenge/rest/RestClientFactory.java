@@ -9,6 +9,7 @@ import feign.jackson.JacksonEncoder;
 import feign.slf4j.Slf4jLogger;
 
 public class RestClientFactory {
+
     public static <T> T createClient(String url, Class<T> clazz) {
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
